@@ -1,0 +1,7 @@
+fdim                     Returns Fractal Dimension.
+makeline                 Toolbox function for populate one segment in R^(n).
+makehplane               Toolbox funtion for populate a chunk of a plane in R^(n).
+makessphere              Toolbox function for populate a sphere surface with points.
+makesphere               Toolbox function for populate a sphere with points.
+makesurface              Toolbox function for populate a surface like z=x^e1+y^e2.
+slopeopt                 Function for refine the estimation of slope (i.e. the q fractal dimension).
