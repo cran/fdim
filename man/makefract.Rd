@@ -43,11 +43,11 @@ makesurface(E1, E2, NumN=1000)
 \item{NumN}{Number of points to be generated.}
 }
 
-
 \author{
-Francisco Javier Martinez de Pison. \email{francisco.martinez@die.unirioja.es} \cr
-Joaquin Ordieres Mere.			\email{joaquin.ordieres@dim.unirioja.es}
-}
+Francisco Javier Martinez de Pison. \email{francisco.martinez@dim.unirioja.es}\cr
+Joaquin Ordieres Mere.              \email{joaquin.ordieres@dim.unirioja.es}\cr
+Manuel Castejon Limas.              \email{manuel.castejon@dim.unirioja.es}\cr
+Fco. Javier de Cos Juez.            \email{francisco-javier.de-cos@dim.unirioja.es}\cr}
 
 \seealso{
 \code{\link{introfdim}}, \code{\link{fdim}}, \code{\link{slopeopt}}

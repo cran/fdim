@@ -3,6 +3,10 @@ Author 1: Joaquin Ordieres Mere
           ordieres.mere@dim.unirioja.es
 Author 2: Fco. Javier Martinez de Pison Ascacibar
           fjmartin@die.unirioja.es
+Author 3: Manuel Castejon Limas
+          manuel.castejon@dim.unirioja.es
+Author 4: Francisco Javier de Cos Juez
+	  francisco-javier.de-cos@dim.unirioja.es 
 
 UNIVERSITY OF LA RIOJA
 LOGROÑO(SPAIN)

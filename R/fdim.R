@@ -1,11 +1,15 @@
 	#########################################
-	# fdim.R (v1.1) 7-03-2000   	#
+	# fdim.R (v1.1) 12-12-2000  	 	#
 	# University of La Rioja (SPAIN) 	#
 	# Authors: 			 	#
 	# Joaquin Ordieres Mere		 	#
 	# mail:joaquin.ordieres@dim.unirioja.es	#
 	# Fco. Javier Mtnez de Pisón	 	#
 	# mail: fjmartin@die.unirioja.es	#
+	# Manuel Castejon Limas			#
+	# mail: manuel.castejon@dim.unirioja.es	#
+	# Fco Javier de Cos Juez		#
+	# mail: frde-cos@dim.unirioja.es	# 
 	#########################################
 
 # This function provides informations about the 

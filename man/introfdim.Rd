@@ -68,9 +68,10 @@ The other functions are complementary, in order to provide sets of points
 }
 
 \author{
-Francisco Javier Martinez de Pison. \email{francisco.martinez@die.unirioja.es}\cr
-Joaquin Ordieres Mere.
-\email{joaquin.ordieres@dim.unirioja.es}\cr }
+Francisco Javier Martinez de Pison. \email{francisco.martinez@dim.unirioja.es}\cr
+Joaquin Ordieres Mere.              \email{joaquin.ordieres@dim.unirioja.es}\cr
+Manuel Castejon Limas.              \email{manuel.castejon@dim.unirioja.es}\cr
+Fco. Javier de Cos Juez.            \email{francisco-javier.de-cos@dim.unirioja.es}\cr}
 
 \references{
 Halsey C.T., Mogens H.J., Kandanoff L.P., Procaccia I., Shraiman B.I. \bold{"Fractal Measures and their singularities: The caracterization of strange sets"}. Physical Review  vol 33, nº 2. 1986\cr \cr
