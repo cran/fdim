@@ -1,29 +1,31 @@
 \name{introfdim}
 \alias{introfdim}
-\title{
-Introduction to the calculation of the dimension fractal.
-}
+\title{ Introduction to the calculation of the dimension fractal.  }
 
-\description{
-Shows the theoretical basis regarding the fractal dimension measurement.
-}
+\description{ Shows the theoretical basis regarding the fractal dimension measurement.  }
 
 \details{
-Fractals burst into the open in early 1970s. Their breathtaking beauty captivated many a layman and a professional alike. 
+Fractals burst into the open in early 1970s. Their breathtaking beauty 
+captivated many a layman and a professional alike. 
 Striking fractal images can often be obtained with very elementary means. 
-However, the definition of fractals is far from being trivial and depends on a formal definition of dimension.
-It takes a few chapters of an Advanced Analysis book to rigorously define a notion of dimension. 
-The important thing is that the notion is not unique and even more importantly, for a given set, various definitions may 
+However, the definition of fractals is far from being trivial and depends 
+on a formal definition of dimension.
+It takes a few chapters of an Advanced Analysis book to rigorously define
+ a notion of dimension. 
+The important thing is that the notion is not unique and even more importantly,
+ for a given set, various definitions may 
 lead to different numerical results. When the results differ the set is called fractal. 
 Or in the words of Benoit Mandelbrot, the father of fractals:
+\emph{A fractal is by definition a set for which the Hausdorff-Besicovitch dimension
+ strictly exceeds the topological dimension.}
 
-            A fractal is by definition a set for which the Hausdorff-Besicovitch 
-           dimension strictly exceeds the topological dimension. 
-	
-The topological dimension of a smooth curve is, as one would expect, one and that of a sphere is two which may 
-seem very intuitive. However, the formal definition was only given in 1913 by the Dutch mathematician 
-L. Brouwer (1881-1966). A (solid) cube has the topological dimension of three because in any decomposition of 
-the cube into smaller bricks there always are points that belong to at least four (3+1) bricks.
+The topological dimension of a smooth curve is, as one would expect,
+ one and that of a sphere is two which may 
+seem very intuitive. However, the formal definition was only given in 1913
+ by the Dutch mathematician 
+L. Brouwer (1881-1966). A (solid) cube has the topological dimension of three because
+ in any decomposition of 
+the cube into smaller bricks there always are points that belong to at least four \eqn{\left(3+1\right)}{(3+1)} bricks.
 The Brouwer dimension is obviously an integer. 
 The Hausdorff-Besicovitch dimension, on the other hand, may be a fraction. 
 Formal definition of this quantity requires a good deal of the Measure Theory. 
@@ -35,24 +37,24 @@ considered to be germane to fractals in general. The applet below illustrates th
 The similarity dimension of the snowflake curve is finite. This is arrived at in the following manner. 
 If it were a straight line we could split it into to smaller segments each half the length of the "parent" line. 
 The length of the line would be the sum of the two smaller segments. If we were talking about areas, then taking a 
-square and splitting it into 4 smaller squares with areas 1/4 of the "parent" square. 
+square and splitting it into 4 smaller squares with areas \eqn{\frac{1}{4}}{1/4} of the "parent" square. 
 We would observe that the four smaller areas sum up to the original size. Notice that when the side of a square is halved, 
-its area decreases by the factor of 4 which is (1/2)2. For a cube, acting similarly, decreasing its size by a factor of 2, 
-results in smaller cubes each with the volume 1/8=(1/2)3 of the "parent" cube. We can detect a commonality in these 
-three examples. Given a shape of size S. It's split into N similar smaller shapes each with the size (S/N) so 
-that N*(S/N)=S. In each of the three cases we used a different function S. If a is a linear dimension of the shape we 
-have S(a)=a for a line segment and S(a)=a2 and S(a)=a3 for the square and cube, respectively. Thus, N*(S/N)=S can 
-be rewritten as N*(a/M)D=aD where a is the "linear size" of the shape, M is the number of linear parts, and N is the 
-total number of the resulting smaller shapes. This gives N*M-D=1 or N=MD. In all three cases we took M=2 and D 
-was successively 1, 2, and 3. We see that D=log(N)/log(M) is what we would call the dimension in all three cases.
+its area decreases by the factor of 4 which is \eqn{\left(\frac{1}{2}\right)^2}{(1/2)^2}. For a cube, acting similarly, decreasing its size by a factor of 2, 
+results in smaller cubes each with the volume \eqn{\frac{1}{8}=\left(\frac{1}{2}\right)^3}{(1/8)=(1/2)^3} of the "parent" cube. We can detect a commonality in these 
+three examples. Given a shape of size \eqn{S}{S}. It's split into \eqn{N}{N} similar smaller shapes each with the size \eqn{\frac{S}{N}}{S/N} so 
+that \eqn{N\left(\frac{S}{N}\right)=S}{N*(S/N)=S}. In each of the three cases we used a different function \eqn{S}{S}. If a is a linear dimension of the shape we 
+have \eqn{S(a)=a}{S(a)=a} for a line segment and \eqn{S(a)=a^2}{S(a)=a^2} and \eqn{S(a)=a^3}{S(a)=a^3} for the square and cube, respectively. Thus, \eqn{N\left(\frac{S}{N}\right)=S}{N*(S/N)=S} can 
+be rewritten as \eqn{N\left(\frac{a}{M}\right)^D=a^D}{N*(a/M)^D=a^D} where \eqn{a}{a} is the "linear size" of the shape, \eqn{M}{M} is the number of linear parts, and \eqn{N}{N} is the 
+total number of the resulting smaller shapes. This gives \eqn{NM^{-D}=1}{NM^(-D)=1} or \eqn{N=M^D}{N=M^(-D)}. In all three cases we took \eqn{M=2}{M=2} and \eqn{D}{D} 
+was successively 1, 2, and 3. We see that \eqn{D=\frac{\log\left(N\right)}{\log\left(M\right)}}{D=log(N)/log(M)} is what we would call the dimension in all three cases.
 
-This quantity D is known as the similarity dimension. It applies to shapes that are composed of a few copies of 
-themselves whose "linear" size is smaller than that of the "parent" shape by a factor of M. Returning to the snowflake, 
-we have N=4 and M=3. In this case D=log(4)/log(3) is somewhere between 1 and 2. 
+This quantity \eqn{D}{D} is known as the similarity dimension. It applies to shapes that are composed of a few copies of 
+themselves whose "linear" size is smaller than that of the "parent" shape by a factor of \eqn{M}{M}. Returning to the snowflake, 
+we have \eqn{N=4}{N=4} and \eqn{M=3.}{M=3} In this case \eqn{D=\frac{\log\left(4\right)}{\log \left(3\right)}}{D=log(4)/log(3)} is somewhere between 1 and 2. 
 
 The Koch's snowflake has no self-intersection and is obtained from a line segment as an image of a continuous function. 
 By one of Brouwer's theorems this function preserves the topological dimension of the segment (which is, of course 1). 
-Finally, the curve has topological dimension 1 whereas its Hausdorff-Besicovitch dimension is log(4)/log(3). 
+Finally, the curve has topological dimension 1 whereas its Hausdorff-Besicovitch dimension is \eqn{\frac{\log\left(4\right)}{\log\left(3\right)}}{log(4)/log(3)}. 
 
 
 The main funcions are \emph{fdim} and \emph{slopeopt}, the first one for 

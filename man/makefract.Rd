@@ -39,7 +39,7 @@ makesurface(E1, E2, NumN=1000)
 \item{L}{Radius of sphere to be generated.}
 \item{}
 \item{makesurface:}
-\item{E1,E2}{Coefficients of an exponential model modelling the surface z=pow(x,e1)+pow(y,e2) where -2 < x,y < 2 }
+\item{E1,E2}{Coefficients of an exponential model modelling the surface \eqn{z=x^{E1}+y^{E2})}{z=x^E1+y^E2} where \eqn{-2 < x,y < 2}{-2< x,y <2} }
 \item{NumN}{Number of points to be generated.}
 }
 

@@ -12,18 +12,25 @@ fdim(X, BaseR=2, Mnmax=TRUE, nMax=9, NumMinP=1, q=0, Alpha=0.2, PlotF=FALSE)
 \arguments{
 The goal is to calculate the generalizated fractal dimension which can be written:
 \cr
-Dq=(1/(q-1))*log2(sum(pow(Pj,q)))/log2(r) when (r->0), \cr
-where Pj is the probability that the element "j" has model points inside.
+\deqn{D_q=\frac{1}{q-1} \frac{log_2  \left( \sum  P_j^q  \right) }{log_2 \left( r
+\right) } \textrm{,  when \eqn{r \rightarrow 0},}}{Dq=(1/(q-1))*(log(sum(Pj^q))/log(r)), when r -> 0}  where \eqn{P_j}{Pj} is the
+probability that the element \eqn{j}{j} has model points inside.  
 
 \item{X}{Data frame object containing the real data.}
 \item{BaseR}{Factor for generation of cubic elements covering the space of state.}
 \item{Mnmax}{Criteria for stopping the algorithm. TRUE for make sense the parameter nMax as steps of splitting the global box. In other case the algorithm stops when the number of boxes is greather than the half of number of points.}
 \item{nMax}{Number of steps in the splitting process. (the exponent of the BaseR to determine the size of elementary box.)}
 \item{NumMinP}{Minimum number of points inside of an elementary box to consider it is filled by points in terms of algorithm.}
-\item{q}{Order of fractal dimension to be calculated. (0: Hausdorff Dimension, 0,999999: Information Dimension, 2: Correlation Dimension).}
-\item{Alpha}{Confidence parameter to exclude some points if they are quite far in order to evaluate the slope of the linear regresion model.}
-\item{PlotF}{Boolean for make possible to plot points directly.}
+\item{q}{Order of fractal dimension to be calculated. 
+\itemize{
+\item q=0: Hausdorff Dimension
+\item q=0,999999: Information Dimension
+\item q=2: Correlation Dimension).
 }
+}
+\item{Alpha}{Confidence parameter to exclude some points if they are quite
+far in order to evaluate the slope of the linear regresion model.}
+\item{PlotF}{Boolean for make possible to plot points directly.} }
 \value{
 \emph{fdim} returns fdim, the value of data's q-dimension.
 
@@ -67,7 +74,8 @@ library(fdim)
 data <- makeline(10000,3,100)   	# Build a data-set if the user doesn't has it.
 df <- fdim(data,q=0,Alpha=0.3)  	# Calculation of fractal dimension
 print (df$fdim)				# Show us the q-dimension value.
-print (df)				# Show us relevant information about theestimated fractal dimension.
+print (df)				# Show us relevant information about the estimated
+					# fractal dimension.
 
 plot(df$allpoints)			# make a plot in order to see the ipoints individually
 abline(coef(df),col=2)			# draw a line in order to see the correlation
