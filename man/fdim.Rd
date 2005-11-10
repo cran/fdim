@@ -13,14 +13,19 @@ fdim(X, BaseR=2, Mnmax=TRUE, nMax=9, NumMinP=1, q=0, Alpha=0.2, PlotF=FALSE)
 The goal is to calculate the generalizated fractal dimension which can be written:
 \cr
 \deqn{D_q=\frac{1}{q-1} \frac{log_2  \left( \sum  P_j^q  \right) }{log_2 \left( r
-\right) } \textrm{,  when \eqn{r \rightarrow 0},}}{Dq=(1/(q-1))*(log(sum(Pj^q))/log(r)), when r -> 0}  where \eqn{P_j}{Pj} is the
+\right) } \textrm{,  when \eqn{r \rightarrow 0},}}{Dq=(1/(q-1))*(log(sum(Pj^q))/log(r)), 
+when r -> 0}  where \eqn{P_j}{Pj} is the
 probability that the element \eqn{j}{j} has model points inside.  
 
 \item{X}{Data frame object containing the real data.}
 \item{BaseR}{Factor for generation of cubic elements covering the space of state.}
-\item{Mnmax}{Criteria for stopping the algorithm. TRUE for make sense the parameter nMax as steps of splitting the global box. In other case the algorithm stops when the number of boxes is greather than the half of number of points.}
-\item{nMax}{Number of steps in the splitting process. (the exponent of the BaseR to determine the size of elementary box.)}
-\item{NumMinP}{Minimum number of points inside of an elementary box to consider it is filled by points in terms of algorithm.}
+\item{Mnmax}{Criteria for stopping the algorithm. TRUE for make sense the parameter 
+             nMax as steps of splitting the global box. In other case the algorithm 
+             stops when the number of boxes is greather than the half of number of points.}
+\item{nMax}{Number of steps in the splitting process. (the exponent of the BaseR 
+            to determine the size of elementary box.)}
+\item{NumMinP}{Minimum number of points inside of an elementary box to consider 
+               it is filled by points in terms of algorithm.}
 \item{q}{Order of fractal dimension to be calculated. 
 \itemize{
 \item q=0: Hausdorff Dimension
@@ -55,13 +60,26 @@ Manuel Castejon Limas. 	            \email{manuel.castejon@dim.unirioja.es}\cr
 Fco. Javier de Cos Juez.            \email{francisco-javier.de-cos@dim.unirioja.es}\cr}
 
 \references{
-Halsey C.T., Mogens H.J., Kandanoff L.P., Procaccia I., Shraiman B.I. \bold{"Fractal Measures and their singularities: The caracterization of strange sets"}. Physical Review  vol 33, nº 2. 1986\cr \cr
-Roberts J.A., Cronin A. \bold{"Unbiased estimation of multi-fractal dimensions of finite data sets"} \url{http://www.sci.usq.edu.au/pub/MC/staff/robertsa/multif.htm} . July 1996.\cr \cr
-David M. Alexander, Phil Sheridan, Paul D. Bourke, Otto Konstandatos. \bold{"Global and local similarity of the primary visual cortex: mechanisms of orientation preference"}. HELNET - International Workshop on Neural Networks, September 1997\cr \cr
-Geoffrey B. West, James H. Brown, Brian J. Enquist. \bold{"The Fourth Dimension of Life: Fractal Geometry and Allometric Scaling of Organisms"}., Santa Fe Institute of Research. 1999\cr \cr
-Christo Faloutsos, Volker Gaede. \bold{"Analisys of n-dimensional Quadtrees Using the Hausdorff Fractal Dimension"}. Mumbai (Bombay), Proceedings of the 22nd  VLDB Conference, India, 1996.\cr \cr
-Alberto Belussi, Christo Faloutsos. \bold{"Estimating the Selectivity of Spatial Queries Using the 'Correlation' Fractal Dimension"}., Zurich, Switzerland, Proceedings of the 21st VLDB Conference, 1995.\cr \cr
-Menéndez Fernández C.; Ordieres Meré J.; Ortega Fernández F. \bold{"Importance of information pre-processing importance in the improvement of neural networks results."}. International Journal on Expert System and Neural Networks, Vol. 13, No. 2, pp. 95-103. May 1996.\cr \cr
+Halsey C.T., Mogens H.J., Kandanoff L.P., Procaccia I., Shraiman B.I. 
+\bold{"Fractal Measures and their singularities: The caracterization of strange sets"}. 
+Physical Review  vol 33, nº 2. 1986\cr \cr
+Roberts J.A., Cronin A. \bold{"Unbiased estimation of multi-fractal dimensions of finite data sets"} 
+\url{http://www.sci.usq.edu.au/pub/MC/staff/robertsa/multif.htm} . July 1996.\cr \cr
+David M. Alexander, Phil Sheridan, Paul D. Bourke, Otto Konstandatos. 
+\bold{"Global and local similarity of the primary visual cortex: mechanisms of orientation preference"}. 
+HELNET - International Workshop on Neural Networks, September 1997\cr \cr
+Geoffrey B. West, James H. Brown, Brian J. Enquist. 
+\bold{"The Fourth Dimension of Life: Fractal Geometry and Allometric Scaling of Organisms"}., 
+Santa Fe Institute of Research. 1999\cr \cr
+Christo Faloutsos, Volker Gaede. 
+\bold{"Analisys of n-dimensional Quadtrees Using the Hausdorff Fractal Dimension"}. 
+Mumbai (Bombay), Proceedings of the 22nd  VLDB Conference, India, 1996.\cr \cr
+Alberto Belussi, Christo Faloutsos. 
+\bold{"Estimating the Selectivity of Spatial Queries Using the 'Correlation' Fractal Dimension"}., 
+Zurich, Switzerland, Proceedings of the 21st VLDB Conference, 1995.\cr \cr
+Menéndez Fernández C.; Ordieres Meré J.; Ortega Fernández F. 
+\bold{"Importance of information pre-processing importance in the improvement of neural networks results."}. 
+International Journal on Expert System and Neural Networks, Vol. 13, No. 2, pp. 95-103. May 1996.\cr \cr
 }
 
 \seealso{
@@ -71,8 +89,8 @@ Menéndez Fernández C.; Ordieres Meré J.; Ortega Fernández F. \bold{"Importance o
 \examples{
 #Example 1
 library(fdim)
-data <- makeline(10000,3,100)   	# Build a data-set if the user doesn't has it.
-df <- fdim(data,q=0,Alpha=0.3)  	# Calculation of fractal dimension
+mydata <- makeline(10000,3,100)   	# Build a data-set if the user doesn't has it.
+df <- fdim(mydata,q=0,Alpha=0.3)  	# Calculation of fractal dimension
 print (df$fdim)				# Show us the q-dimension value.
 print (df)				# Show us relevant information about the estimated
 					# fractal dimension.
@@ -84,9 +102,9 @@ df2 <- slopeopt(as.matrix(df$allpoints),Alpha=0.5)
 summary(df2)				# Show us the quality of the approach.
 
 #Example 2
-data <- makessphere(1000)		#Build a data-set with points making a Sphere Surface
-if (require(xgobi)) xgobi(data)		#Show data	
-df <- fdim(data,q=0,Alpha=0.2,PlotF=TRUE)  	# Calculation of fractal dimension
+mydata <- makessphere(1000)		#Build a data-set with points making a Sphere Surface
+if (require(xgobi)) xgobi(mydata)		#Show mydata	
+df <- fdim(mydata,q=0,Alpha=0.2,PlotF=TRUE)  	# Calculation of fractal dimension
 print(df$fdim)				#Fractal Dimension
 }
 \keyword{robust}

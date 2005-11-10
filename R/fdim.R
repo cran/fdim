@@ -58,7 +58,8 @@ fdim <- function (X, BaseR = 2, Mnmax = TRUE, nMax = 9, NumMinP = 1,
     # NumpDif=Number of different points	
     NumpDif <- 0	
     DK <- .C("pointdif", as.integer(NumRow), as.integer(NumCol), 
-                as.integer(X), NumpDif = as.integer(NumpDif))
+                as.integer(X), NumpDif = as.integer(NumpDif), 
+                PACKAGE = "fdim" )
 
     RadioN <- matrix(0, 2000, 2)
     SumFreq <- matrix(0, 2000, 2)
@@ -76,7 +77,8 @@ fdim <- function (X, BaseR = 2, Mnmax = TRUE, nMax = 9, NumMinP = 1,
            DF <- .C("cboxn", as.integer(NumRow), as.integer(NumCol), 
                 as.integer(NumMinP), as.integer(X), as.double(r),
 		SumSQRFreq=as.double(SumSQRFreq),Informations=as.double(Informations),
-                NBox = as.integer(NBox), q = as.double(q), Dq = as.double(Dq))
+                NBox = as.integer(NBox), q = as.double(q), Dq = as.double(Dq),
+                PACKAGE= "fdim" )
 	        
 	   DF$Dq <- log2(DF$Dq)/(q-1)    
            RadioN[Indice, 1:2] <- c(log2(r), DF$Dq)
