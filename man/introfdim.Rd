@@ -113,7 +113,8 @@ Alberto Belussi, Christo Faloutsos.
 \bold{"Estimating the Selectivity of Spatial Queries Using the 'Correlation' Fractal Dimension"}., 
 Zurich, Switzerland, Proceedings of the 21st VLDB Conference, 1995.\cr \cr
 Menéndez Fernández C.; Ordieres Meré J.; Ortega Fernández F. 
-\bold{"Importance of information pre-processing importance in the improvement of neural networks results."}. 
+\bold{"Importance of information pre-processing importance in the improvement 
+                                    of neural networks results."}. 
 International Journal on Expert System and Neural Networks, Vol. 13, No. 2, pp. 95-103. May 1996.\cr \cr
 }
 \seealso{

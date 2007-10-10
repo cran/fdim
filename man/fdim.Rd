@@ -63,7 +63,8 @@ Fco. Javier de Cos Juez.            \email{francisco-javier.de-cos@dim.unirioja.
 Halsey C.T., Mogens H.J., Kandanoff L.P., Procaccia I., Shraiman B.I. 
 \bold{"Fractal Measures and their singularities: The caracterization of strange sets"}. 
 Physical Review  vol 33, nº 2. 1986\cr \cr
-Roberts J.A., Cronin A. \bold{"Unbiased estimation of multi-fractal dimensions of finite data sets"} 
+Roberts J.A., Cronin A. \bold{"Unbiased estimation of multi-fractal dimensions
+                               of finite data sets"} 
 \url{http://www.sci.usq.edu.au/pub/MC/staff/robertsa/multif.htm} . July 1996.\cr \cr
 David M. Alexander, Phil Sheridan, Paul D. Bourke, Otto Konstandatos. 
 \bold{"Global and local similarity of the primary visual cortex: mechanisms of orientation preference"}. 
@@ -75,11 +76,14 @@ Christo Faloutsos, Volker Gaede.
 \bold{"Analisys of n-dimensional Quadtrees Using the Hausdorff Fractal Dimension"}. 
 Mumbai (Bombay), Proceedings of the 22nd  VLDB Conference, India, 1996.\cr \cr
 Alberto Belussi, Christo Faloutsos. 
-\bold{"Estimating the Selectivity of Spatial Queries Using the 'Correlation' Fractal Dimension"}., 
+\bold{"Estimating the Selectivity of Spatial Queries Using the 'Correlation'
+                                              Fractal Dimension"}., 
 Zurich, Switzerland, Proceedings of the 21st VLDB Conference, 1995.\cr \cr
 Menéndez Fernández C.; Ordieres Meré J.; Ortega Fernández F. 
-\bold{"Importance of information pre-processing importance in the improvement of neural networks results."}. 
-International Journal on Expert System and Neural Networks, Vol. 13, No. 2, pp. 95-103. May 1996.\cr \cr
+\bold{"Importance of information pre-processing importance in the 
+                                 improvement of neural networks results."}. 
+International Journal on Expert System and Neural Networks, Vol. 13, 
+                                 No. 2, pp. 95-103. May 1996.\cr \cr
 }
 
 \seealso{

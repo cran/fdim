@@ -11,7 +11,7 @@
 	# Fco Javier de Cos Juez		#
 	# mail: frde-cos@dim.unirioja.es	# 
 	#########################################
-
+#
 # This function provides informations about the 
 # Dq=(1/(q-1))*log2(sum(Pj^q))/log2(r) when (r->0)
 # dimension of a matrix of points
@@ -133,19 +133,19 @@ fdim <- function (X, BaseR = 2, Mnmax = TRUE, nMax = 9, NumMinP = 1,
 	FractalDim$informationdim <- PuntosInfo
     	}
    
-    if (PlotF) 
-	{ 
-        plot(AllPoints, type = "b", xlab = "log2(1/(BaseR^n))",
-		ylab = "log2(sum(Pj^q)/(q-1))",
-            	main = "Dq Dimension",
-		col = "blue")
-	if (FractalDim$slopeisOK)
-		{
-		curve(FractalDim$coefficients[1]+FractalDim$coefficients[2]*x,
-			FractalDim$range[1],FractalDim$range[2],
-			add=TRUE,col="red")
-		}
-	}
+ #   if (PlotF) 
+ #	{ 
+ #       plot(AllPoints, type = "b", xlab = "log2(1/(BaseR^n))",
+ #		ylab = "log2(sum(Pj^q)/(q-1))",
+ #           	main = "Dq Dimension",
+ #		col = "blue")
+ #	if (FractalDim$slopeisOK)
+ #		{
+ #		curve(FractalDim$coefficients[1]+FractalDim$coefficients[2]*X,   # changed from x to X
+ #			FractalDim$range[1],FractalDim$range[2],
+ #			add=TRUE,col="red")
+ #		}
+ #	}
 
 return(FractalDim)
 }
